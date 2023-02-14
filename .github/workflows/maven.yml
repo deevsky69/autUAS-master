@@ -70,13 +70,6 @@ jobs:
           path: ./testingUASCICD/test3.png
           uploadMethod: imgbb
           apiKey: '53f280e8fd4e59b74ee628c5d230d740'
-      - name: Upload Image 4
-        id: upload-image-4
-        uses: McCzarny/upload-image@v1.2.5
-        with:
-          path: ./testingUASCICD/test4.png
-          uploadMethod: imgbb
-          apiKey: '53f280e8fd4e59b74ee628c5d230d740'
       - name: Stop Docker
         run: docker stop docker-apache
 
