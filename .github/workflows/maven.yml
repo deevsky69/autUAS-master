@@ -49,11 +49,32 @@ jobs:
         run: |
               cd ./testingUASCICD
               mvn test
-      - name: Upload Image
-        id: upload-image-0
+      - name: Upload Image 1
+        id: upload-image-1
         uses: McCzarny/upload-image@v1.2.5
         with:
           path: ./testingUASCICD/test1.png
+          uploadMethod: imgbb
+          apiKey: '53f280e8fd4e59b74ee628c5d230d740'
+      - name: Upload Image 2
+        id: upload-image-2
+        uses: McCzarny/upload-image@v1.2.5
+        with:
+          path: ./testingUASCICD/test2.png
+          uploadMethod: imgbb
+          apiKey: '53f280e8fd4e59b74ee628c5d230d740'
+      - name: Upload Image 3
+        id: upload-image-3
+        uses: McCzarny/upload-image@v1.2.5
+        with:
+          path: ./testingUASCICD/test3.png
+          uploadMethod: imgbb
+          apiKey: '53f280e8fd4e59b74ee628c5d230d740'
+      - name: Upload Image 4
+        id: upload-image-4
+        uses: McCzarny/upload-image@v1.2.5
+        with:
+          path: ./testingUASCICD/test4.png
           uploadMethod: imgbb
           apiKey: '53f280e8fd4e59b74ee628c5d230d740'
       - name: Stop Docker
